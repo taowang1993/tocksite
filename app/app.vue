@@ -5,20 +5,20 @@ const color = computed(() => colorMode.value === 'dark' ? '#020618' : 'white')
 
 const themeAwareFavicons = useState('tocksite-theme-favicons', () => ({
   dark: false,
-  light: false,
+  light: false
 }))
 
 if (import.meta.server) {
   const [{ existsSync }, { resolve: resolvePath }] = await Promise.all([
     import('node:fs'),
-    import('node:path'),
+    import('node:path')
   ])
 
   const publicDir = resolvePath(process.cwd(), 'public')
 
   themeAwareFavicons.value = {
     dark: existsSync(resolvePath(publicDir, 'favicon-dark.svg')),
-    light: existsSync(resolvePath(publicDir, 'favicon-light.svg')),
+    light: existsSync(resolvePath(publicDir, 'favicon-light.svg'))
   }
 }
 
@@ -32,7 +32,7 @@ const faviconLinks = computed(() => {
       href: '/favicon-dark.svg',
       type: 'image/svg+xml',
       media: '(prefers-color-scheme: light)',
-      sizes: 'any',
+      sizes: 'any'
     })
   }
 
@@ -43,7 +43,7 @@ const faviconLinks = computed(() => {
       href: '/favicon-light.svg',
       type: 'image/svg+xml',
       media: '(prefers-color-scheme: dark)',
-      sizes: 'any',
+      sizes: 'any'
     })
   }
 
@@ -52,7 +52,7 @@ const faviconLinks = computed(() => {
     rel: 'icon',
     type: 'image/svg+xml',
     href: '/logo.svg',
-    sizes: 'any',
+    sizes: 'any'
   })
 
   return links
