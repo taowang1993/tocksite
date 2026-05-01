@@ -2,30 +2,30 @@
 
 ## Overview
 
-The Official Website for Tocksite.
+The Official Website for Tockbot.com.
 
 This repository is a Nuxt 4 marketing site with content-driven pages for the landing page, pricing, blog, changelog, docs, and auth demo flows. `public/logo.svg` is the shared brand asset for the logo and favicon.
 
 ## Tech Stack
 
-| Tech | Use case |
-| --- | --- |
-| Nuxt 4 | routing / SSR |
-| Vue 3 | UI |
-| TypeScript | type safety |
-| Nuxt UI v4 | components |
-| Tailwind CSS v4 | styling |
-| Nuxt Content v3 | content |
-| nuxt-og-image | social images |
-| @nuxt/image | images |
-| @vueuse/nuxt | composables |
-| Zod | validation |
-| Iconify (Lucide + Simple Icons) | icons |
-| better-sqlite3 | local store |
-| ESLint / @nuxt/eslint | linting |
-| GitHub Actions | CI |
-| pnpm | package manager |
-| nuxt-skill-hub | agent skills |
+| Tech                            | Use case        |
+| ------------------------------- | --------------- |
+| Nuxt 4                          | routing / SSR   |
+| Vue 3                           | UI              |
+| TypeScript                      | type safety     |
+| Nuxt UI v4                      | components      |
+| Tailwind CSS v4                 | styling         |
+| Nuxt Content v3                 | content         |
+| nuxt-og-image                   | social images   |
+| @nuxt/image                     | images          |
+| @vueuse/nuxt                    | composables     |
+| Zod                             | validation      |
+| Iconify (Lucide + Simple Icons) | icons           |
+| better-sqlite3                  | local store     |
+| ESLint / @nuxt/eslint           | linting         |
+| GitHub Actions                  | CI              |
+| pnpm                            | package manager |
+| nuxt-skill-hub                  | agent skills    |
 
 ## Architecture
 
@@ -38,9 +38,9 @@ Build time
 └──────────┬───────────┘                    │
            │                                ▼
            │                     ┌──────────────────────────┐
-           │                     │ Generated skill files     │
-           │                     │ .codex/skills/nuxt        │
-           │                     │ .nuxt/skill-hub/nuxt      │
+           │                     │ Generated skill files    │
+           │                     │ .codex/skills/nuxt       │
+           │                     │ .nuxt/skill-hub/nuxt     │
            │                     └──────────────────────────┘
            │
            ▼ HTTP/SSR
@@ -52,7 +52,7 @@ Build time
 │ Nuxt 4 app                                                   │
 │ app/app.vue                                                  │
 │ layouts: default • docs • auth                               │
-│ pages: landing • pricing • blog • changelog • docs • auth   │
+│ pages: landing • pricing • blog • changelog • docs • auth    │
 └──────────┬────────────────────────────┬──────────────────────┘
            │ renders                    │ reads
            ▼                            ▼
