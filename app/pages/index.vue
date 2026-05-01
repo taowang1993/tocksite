@@ -11,6 +11,12 @@ useSeoMeta({
   description,
   ogDescription: description
 })
+
+defineOgImageComponent('Saas', {
+  title,
+  description,
+  headline: 'Tockbot'
+})
 </script>
 
 <template>
