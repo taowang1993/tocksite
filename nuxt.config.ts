@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/content',
     '@vueuse/nuxt',
+    'nuxt-skill-hub',
     'nuxt-og-image'
   ],
 
@@ -37,5 +38,11 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  skillHub: {
+    skillName: 'nuxt',
+    targets: ['codex'],
+    generationMode: 'prepare'
   }
 })

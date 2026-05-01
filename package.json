@@ -27,6 +27,7 @@
   "devDependencies": {
     "@nuxt/eslint": "^1.15.2",
     "eslint": "^10.2.1",
+    "nuxt-skill-hub": "0.0.8",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.2.7"
   },
