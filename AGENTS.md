@@ -1,4 +1,4 @@
-# Tocksite
+# Tocksite Website
 
 ## Overview
 
@@ -125,3 +125,16 @@ Browser
 └── .context/
     └── architecture.md
 ```
+
+## Development Guidelines
+
+- Use `pnpm install`, `pnpm dev`, `pnpm build`, `pnpm preview`, `pnpm lint`, and `pnpm typecheck`.
+- Keep content in `content/` and update `content.config.ts` when schemas change.
+- Fetch data with `queryCollection*` helpers instead of hardcoding copy in components.
+- Reuse Nuxt UI components and shared layouts before adding custom CSS.
+- Keep SEO and social metadata aligned with `useSeoMeta`, `defineOgImageComponent`, and `public/logo.svg`.
+- Follow `.editorconfig`: 2-space indentation, LF endings, no trailing whitespace.
+- Keep numeric prefixes in content paths so ordering stays deterministic.
+- Treat auth, newsletter, and similar flows as demos until real services exist.
+- When rebranding, use `public/logo.svg` for the logo and favicon and keep the content pipeline intact.
+- When opening or updating a PR, use `.github/PR.md` as the source template for the PR body.

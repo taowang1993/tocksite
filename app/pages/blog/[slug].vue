@@ -28,7 +28,9 @@ if (post.value.image?.src) {
   })
 } else {
   defineOgImageComponent('Saas', {
-    headline: 'Blog'
+    headline: 'Blog',
+    title,
+    description
   })
 }
 </script>
